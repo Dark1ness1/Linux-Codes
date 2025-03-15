@@ -1,0 +1,14 @@
+#!/usr/bin/gawk -f
+
+# Calculate the total energy of the configuration (column 11), and the average energy per atom
+
+# Skip the first 8 lines and process starting from the 9th line
+NR > 8 {	
+sum+=$11
+count++
+}
+END {
+echo "total energy is:"
+print sum
+print "average energy is:",sum/count
+}
