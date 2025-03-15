@@ -2,15 +2,15 @@ Linux code for finding number of files, the largest file etc, in the file TestDa
 
 Ex4_1.bsh :
 
- count the number of files in this directory after untar and unziping TestDataForExercises and print out the name of the file with the largest number of entries _
+ count the number of files in this directory after untar and unziping TestDataForExercises and print out the name of the file with the largest number of entries \
  
 Ex4_2.bsh :
 
- The filenames follow the pattern _
- nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt _
- Gives the header info of each individual file and output it to a new file with the name _
- nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt.headerInfo _
- Output only the data lines to a new file with the name _
+ The filenames follow the pattern \
+ nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt \
+ Gives the header info of each individual file and output it to a new file with the name \
+ nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt.headerInfo \
+ Output only the data lines to a new file with the name \
  nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt.data
 
 Ex4_3.bsh :
