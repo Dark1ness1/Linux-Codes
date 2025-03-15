@@ -1,7 +1,7 @@
 file nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.01000.chkpt\
 The file contains 11 columns (look at the header to know what these columns represent), with each line representing attributes of an atom
 
-Ex 5_1.bsh:\
+Ex 5_1.bsh:
 
   Calculates the total energy of the configuration (column 11), and the average energy per atom. 
 
