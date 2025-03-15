@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+# to count the number of files in the directory
+ls -l | wc -l
+
+#file with largest number of entries
+find ./ -name "*.c*" -exec ls -l {} \; | sort -r -k5 | head -1
+ls -l | sort -r -k5 | head -1

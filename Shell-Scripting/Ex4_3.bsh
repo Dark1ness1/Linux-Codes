@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# get the information from the line 3,4,5
+
+for file in *.chkpt
+do
+	echo "$file" | cut -d. -f2 >> boxinfo.txt 
+	sed -n '3,5p' $file | sed 's/^[0-9].eE+-//g' >> boxinfo.txt 
+done
+

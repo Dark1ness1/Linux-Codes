@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+for file in *.*.chkpt
+
+ do
+	grep "^#" $file > $file.headerinfo
+ done

@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+
+#Check if the file exists in the current directory. 
+#• If NO: then print out appropriate error message and exit
+#• If YES: then read the header of the file and print out the simulation box size, snapshot
+#  number, size of the file in human readable form, and number of lines in file
+
+#prompt for file name
+echo "Enter the file name: "
+read filename
+
+if [ -f "$filename" ]; then
+	echo "file '$filename' exist"
+
+	echo "simulation box size:"
+	sed -n '3,5p' $filename | sed 's/^[^0-9]*//g'
+
+	echo "snapshot number:"
+	echo "$filename" | cut -d. -f2
+
+	echo "size of the file in human readable format:"
+	du -h $filename
+
+	echo "number of lines in a file:"
+	wc -l < $filename
+
+else
+	echo "file '$filename' doesnot exist"
+
+fi
