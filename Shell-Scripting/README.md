@@ -2,7 +2,7 @@ Linux code for finding number of files, the largest file etc, in the file TestDa
 
 Ex4_1.bsh :
 
- count the number of files in this directory after untar and unziping TestDataForExercises and print out the name of the file with the largest number of entries \
+ count the number of files in this directory after untar and unziping TestDataForExercises and print out the name of the file with the largest number of entries 
  
 Ex4_2.bsh :
 
