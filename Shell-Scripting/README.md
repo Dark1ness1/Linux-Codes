@@ -1,4 +1,5 @@
-Linux code for finding number of files, the largest file etc, in the file TestDataForExercises.tgz
+Linux code for finding number of files, the largest file etc, in the file TestDataForExercises.tgz .After untar and unziping the file we get multiple files\
+nveTest_screw_n111_bCA_Al_x100_y010_wVtypes.<snapshotNum>.chkpt
 
 Ex4_1.bsh :
 
