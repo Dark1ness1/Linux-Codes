@@ -19,7 +19,7 @@ Ex4_3.bsh :
 
 Ex4_4.bsh :
 
-  Check if the file exists in the current directory. _
-  • If NO: then prints an appropriate error message and exits. _
-  • If YES: then read the header of the file and print out the simulation box size, snapshot _
+  Check if the file exists in the current directory. \
+  • If NO: then prints an appropriate error message and exits. \
+  • If YES: then read the header of the file and print out the simulation box size, snapshot \
     number, size of the file in human readable form, and number of lines in file 
