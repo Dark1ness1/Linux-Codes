@@ -1,0 +1,35 @@
+#!/usr/bin/gawk -f
+
+# Calculate the total energy and average energy per atom of atom types 0,1
+# and 2 (use column 2 for atom types); calculate also the total number of atoms in each type
+
+# Initialize variables for each atom type in BEGIN block
+BEGIN {
+  # Initialize separate variables for sum and count for each atom type
+  for (i = 0; i <= 2; i++) {
+    sum[i] = 0       # Reset sum for each atom type
+    count[i] = 0     # Reset count for each atom type
+  }
+}
+
+# Process lines where NR > 8 (skip the first 8 lines)
+NR > 8 {
+  # Check if the atom type (column 2) matches the current atom type (i)
+  if ($2 >= 0 && $2 <= 2) {
+    sum[$2] += $11    # Add the value from column 11 to the corresponding sum for atom type $2
+    count[$2]++       # Increment the count for the corresponding atom type
+  }
+}
+
+# After processing all lines, print total and average for each atom type
+END {
+  for (i = 0; i <= 2; i++) {
+    print "Total energy of atom type", i, ":", sum[i]
+    if (count[i] > 0) {
+      print "Average energy of atom type", i, ":", sum[i] / count[i]
+    } else {
+      print "No valid rows for atom type", i
+    }
+  }
+}
+
